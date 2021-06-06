@@ -59,13 +59,7 @@ pip install -r requirements.txt
 * Flasgger was used to develop the basic UI of the webpage. It  is a Flask extension to extract OpenAPI-Specification from all Flask views registered in your API.
 * Flasgger also comes with SwaggerUI embedded so you can access http://localhost:5000/apidocs and visualize and interact with your API resources. For more information on flasgger click [here](https://github.com/flasgger/flasgger)
 
-### 7. Model Deployment on Heroku Platoform
-* You will have to create a account in order to deploy the model. Login to your account and go to the deploy section.
-* Connect to your github repository and deploy the model manually or through Heroku CLI.
-
-![3](https://user-images.githubusercontent.com/83957848/119222443-06092480-bb12-11eb-8102-086761ded15b.JPG)
-
-### 8. App Implementation  
+### 7. App Implementation  
 * Link: [BankNoteAuthenticator](https://banknoteauthenticator99.herokuapp.com/apidocs)  
 * The app asks for user to enter the details obtained by wavelet transform tool i.e variance, skewness, curtosis and entropy. Based on these input the banknote is authenticated. 
 
@@ -73,7 +67,7 @@ pip install -r requirements.txt
 ![2](https://user-images.githubusercontent.com/83957848/120903864-6184f780-c666-11eb-9abc-ecc134a6bd68.JPG)
 ![3](https://user-images.githubusercontent.com/83957848/120903869-677ad880-c666-11eb-8a31-5fee94cee2c8.JPG)
 
-### 9. Docker Implementation
+### 8. Docker Implementation
 
 ![4](https://user-images.githubusercontent.com/83957848/120937919-fbfc3e00-c72d-11eb-8eb0-2760b6f3155e.JPG)
 
@@ -104,11 +98,17 @@ This will show details such as Container ID, Image Name, Commands, Status, Ports
 docker run -p 5000:5000 'api_name'
 ```
 
-### 9. Drawbacks and Future Scope
+### 9. Model Deployment on Heroku Platoform
+* You will have to create a account in order to deploy the model. Login to your account and go to the deploy section.
+* Connect to your github repository and deploy the model manually or through Heroku CLI.
+
+![3](https://user-images.githubusercontent.com/83957848/119222443-06092480-bb12-11eb-8102-086761ded15b.JPG)
+
+### 10. Drawbacks and Future Scope
 * The ML model assumes you have the wavelet transform tool in order to extract the features to check the authenticity of the banknotes.
 * An image classifer would be more reliable for this problem statement.
 * Features can be scaled to get more accurate results.
 * The app's front end has room for improvement.
 
-### 10. Credits
+### 11. Credits
 I would like to thank [Krish Naik](https://github.com/krishnaik06) for hosting this problem statement on his youtube channel, whose work was taken as inspiration for successful completion of this project.
