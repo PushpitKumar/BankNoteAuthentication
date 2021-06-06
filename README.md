@@ -9,6 +9,7 @@
 * Building the Web App
 * Model Deployment on Heroku Platform
 * App Implementation
+* Docker Implementation
 * Drawbacks and Future Scope
 * Credits
 
@@ -72,6 +73,42 @@ pip install -r requirements.txt
 ![2](https://user-images.githubusercontent.com/83957848/120903864-6184f780-c666-11eb-9abc-ecc134a6bd68.JPG)
 ![3](https://user-images.githubusercontent.com/83957848/120903869-677ad880-c666-11eb-8a31-5fee94cee2c8.JPG)
 
+### 9. Docker Implementation
+
+![4](https://user-images.githubusercontent.com/83957848/120937919-fbfc3e00-c72d-11eb-8eb0-2760b6f3155e.JPG)
+
+* Dockerizing is the process of packing, deploying, and running applications using Docker containers.
+* Docker is an open source tool that ships your application with all the necessary functionalities as one package. You can use Docker to pack your application with everything you need to run the application (such as libraries) and ship it as one package - a container.
+* Containers are created from images that specify their precise contents. Dockerizing is a big hit nowadays. All the big names use it - Google, VMware, or Amazon support it.
+* You can know more about Docker by clicking [here](https://www.docker.com/) and download it on your computer.
+* This is the first time i have implemented docker on a app. If you would also like to dockerize the app, you need to run the commands in a dockerfile via CLI.
+* The following commands are written in Dockerfile:
+ 1. From - This command is used to get the base image which we can get from dockerhub. 
+ 2. COPY - This command tells the computer to copy the files from local directory to the user root folder in docker.
+ 3. EXPOSE - This command mentions the port number to be used.
+ 4. WORKDIR - The command used to tell our file location in docker
+ 5. RUN pip install -r reuirements.txt
+ 6. CMD python app.py
+* Now to build the docker image, go to your file directory in command prompt and run the following command, where 'api_name' is the name you want to give to your app:
+```
+docker build -t 'api_name'
+```
+* The process will take some time to execute and some compatibility issue of various libraries might arise which you will have to fix manually in requirements.txt
+* Now, you can see your containerized application by running the following command:
+```
+docker ps
+```
+This will show details such as Container ID, Image Name, Commands, Status, Ports, etc.
+* Now to run your application via docker, write the following command, provided you used 5000 as port number:
+```
+docker run -p 5000:5000 'api_name'
+```
+
+### 9. Drawbacks and Future Scope
+* The ML model assumes you have the wavelet transform tool in order to extract the features to check the authenticity of the banknotes.
+* An image classifer would be more reliable for this problem statement.
+* Features can be scaled to get more accurate results.
+* The app's front end has room for improvement.
 
 ### 10. Credits
-I would like to thank [Krish Naik](https://github.com/krishnaik06) for hosting this problem statement on his youtube channel 
+I would like to thank [Krish Naik](https://github.com/krishnaik06) for hosting this problem statement on his youtube channel, whose work was taken as inspiration for successful completion of this project.
