@@ -7,9 +7,9 @@
 * Major Packages/Libraries Used
 * Installation/Working Environment
 * Building the Web App
-* Model Deployment on Heroku Platform
 * App Implementation
 * Docker Implementation
+* Model Deployment on Heroku Platform
 * Drawbacks and Future Scope
 * Credits
 
