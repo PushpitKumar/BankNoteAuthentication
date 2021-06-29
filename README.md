@@ -15,7 +15,7 @@
 
 ### 1. Overview/Problem Statement
 * Ever wondered whether the note given to you as change by the shopkeeper was real or fake? Or you returned empty handed when you went to deposit some money in the bank and your notes were rejected for being fake? This app will help you identify whether the note is authentic or not!
-* This is a classification problem where we use ML algorithms such as LogisticRegression, SVM, KNN and more.
+* For this problem, classification algorithms such as Logistic Regression, KNN, SVM, DecisionTree and RandomForest were implemented. SVM performed the best!.
 
 ### 2. Dataset
 * The dataset was taken from Machine Learning UCI repository and is available on Kaggle. 
@@ -55,8 +55,8 @@ Follow the instructions if you want to run the app from your local computer.
 pip install -r requirements.txt
 ```
 ### 6. Building the Web App
-* The web was developed using flask micro web framework which is written in python suitable for small scale projects such as this one. For more information you can check the offical flask website by clicking [here](https://flask.palletsprojects.com/en/2.0.x/)
-* Flasgger was used to develop the basic UI of the webpage. It  is a Flask extension to extract OpenAPI-Specification from all Flask views registered in your API.
+* The web-app was developed using flask micro web framework which is written in python suitable for small scale projects such as this one. For more information you can check the offical flask website by clicking [here](https://flask.palletsprojects.com/en/2.0.x/)
+* Flasgger was used to develop the basic UI of the web-app. It  is a Flask extension to extract OpenAPI-Specification from all Flask views registered in your API.
 * Flasgger also comes with SwaggerUI embedded so you can access http://localhost:5000/apidocs and visualize and interact with your API resources. For more information on flasgger click [here](https://github.com/flasgger/flasgger)
 
 ### 7. App Implementation  
